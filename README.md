@@ -2,16 +2,16 @@
 
 ## About ##
 
-Filter is a plugin for [CakePHP-2.x](http://cakephp.org/) that helps you to make data searching and filtering forms in a 
+Filter is a plugin for [CakePHP-v2.x](http://cakephp.org/) that helps you to make data searching and filtering forms in a 
 simpler and faster way, without loosing the paging, sorting or any other parameter effect.
 It send the filter conditions as URL parameter, witch gives the users the possibility to 
 bookmark there pages with there desired filted data.
 
 ## Installation ##
 
-- Visit <http://github.com/kdyouri/cakephp-2.x_filter-plugin> and download the plugin.
+- Visit [the github repository](http://github.com/kdyouri/cakephp-2.x_filter-plugin) and download the plugin.
 - Put the files into your `app/Plugin/Filter/` or `plugins/Filter/` folder.
-- Don't forget to load the plugin. <http://book.cakephp.org/2.0/en/plugins/how-to-use-plugins.html>
+- Don't forget to load the plugin. [How to?](http://book.cakephp.org/2.0/en/plugins/how-to-use-plugins.html)
 - Add the `FilterComponent` to your controller.
 
 ## Usage ##
@@ -32,8 +32,8 @@ For filter form, put something like:
 		'options' => array('legend' => __('Filter'))
 	)); ?>
 ```
-If you want to customize your filter conditions, put the `filter()` callback 
-in your model. See the example bellow:
+If you want to customize your filter conditions, put the `filter()` callback in your model. 
+Like the example bellow:
 ```php
 	public function filter($params, $conditions) {
 		if (!empty($params['Employee.name'])) {
