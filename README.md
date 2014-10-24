@@ -26,6 +26,7 @@ For filter form, put something like:
 		'fields' => array(
 			'name' => array('placeholder' => __('first or last name')),
 			'job_id',
+			'Job.min_salary',
 			'department_id'
 		),
 		'options' => array('legend' => __('Filter'))
@@ -51,4 +52,3 @@ Licensed under:
 
 * GPL <http://www.gnu.org/licenses/gpl.html>
 
-[CakePHP]: http://cakephp.org/
