@@ -64,6 +64,7 @@ class FilterComponent extends Component {
 		$url += $params['pass'];
 		if (isset($url['q'])) unset($url['q']);
 		if (isset($url['filter'])) unset($url['filter']);
+		if (isset($url['page'])) unset($url['page']);
 		
 		if ($controller->request->is('post')) {
 			$args = array();
