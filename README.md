@@ -20,7 +20,7 @@ For search form, put in the view file:
 ```php
 <?php echo $this->element('Filter.search_form'); ?>
 ```
-For filter form:
+For filter form, put something like:
 ```php
 	<?php echo $this->element('Filter.filter_form', array(
 		'fields' => array(
@@ -31,7 +31,7 @@ For filter form:
 		'options' => array('legend' => __('Filter'))
 	)); ?>
 ```
-If you want to customize your filter conditions, you can put on your model like:
+If you want to customize your filter conditions, see the example bellow:
 ```php
 	public function filter($params, $conditions) {
 		if (!empty($params['Employee.name'])) {
