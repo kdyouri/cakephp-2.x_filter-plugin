@@ -31,7 +31,8 @@ For filter form, put something like:
 		'options' => array('legend' => __('Filter'))
 	)); ?>
 ```
-If you want to customize your filter conditions, see the example bellow:
+If you want to customize your filter conditions, put the `filter()` callback 
+in your model. See the example bellow:
 ```php
 	public function filter($params, $conditions) {
 		if (!empty($params['Employee.name'])) {
