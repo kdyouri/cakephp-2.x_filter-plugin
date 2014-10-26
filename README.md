@@ -13,7 +13,6 @@ bookmark there pages with there desired filted data.
 - Put the files into your `app/Plugin/Filter/` or `plugins/Filter/` folder.
 - Don't forget to load the plugin. [How to?](http://book.cakephp.org/2.0/en/plugins/how-to-use-plugins.html)
 - Add the `FilterComponent` to your controller:
-
 	```php
 	public $components = array('Filter.Filter');
 	```
