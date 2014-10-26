@@ -16,11 +16,12 @@ bookmark there pages with there desired filted data.
 
 ## Usage ##
 
-For search form, put in the view file:
+- For search form, put in the view file:
 ```php
 <?php echo $this->element('Filter.search_form'); ?>
 ```
-For filter form, put something like:
+
+- For filter form, put something like:
 ```php
 	<?php echo $this->element('Filter.filter_form', array(
 		'fields' => array(
@@ -32,7 +33,13 @@ For filter form, put something like:
 		'options' => array('legend' => __('Filter'))
 	)); ?>
 ```
-If you want to customize your filter conditions, put the `filter()` callback in your model. 
+Notice: Don't forget to send the dropdown lists data from the controller. For our example :
+```php
+$this->set('jobs', $this->Employee->Job->find('list'));
+$this->set('departments', $this->Employee->Department->find('list'));
+```
+
+- If you want to customize your filter conditions, put the `filter()` callback in your model. 
 Like the example bellow:
 ```php
 	public function filter($params, $conditions) {
